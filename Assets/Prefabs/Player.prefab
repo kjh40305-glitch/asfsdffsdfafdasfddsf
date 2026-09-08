@@ -339,8 +339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff934a180d67e14594efb424f044223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrustForce: 5
-  maxSpeed: 5
+  thrustForce: 10
+  maxSpeed: 10
   boost: {fileID: 3406857921429217527}
 --- !u!95 &-6028904215474388838
 Animator:
