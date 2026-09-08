@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    float minSize = 0.08f;
+    public float minSize = 0.08f;
     float maxSize = 0.2f;
     float minSpeed = 60f;
     float maxSpeed = 110f;
     public float maxSpinspeed = 10f;
-
+    public GameObject bounceEffectPrefab;
     Rigidbody2D rb;
     void Start()
     {
@@ -28,5 +28,13 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector2 contactPoint = collision.GetContact(0).point;
+        GameObject bounceEffect = Instantiate(bounceEffectPrefab, contactPoint, Quaternion.identity);
+
+        Destroy(bounceEffect, 1f);
     }
 }

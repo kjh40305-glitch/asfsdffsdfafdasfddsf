@@ -221,3 +221,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpinspeed: 10
+  bounceEffectPrefab: {fileID: 5094547048498986891, guid: 12914bdb608db2345ac22103772ce521, type: 3}
