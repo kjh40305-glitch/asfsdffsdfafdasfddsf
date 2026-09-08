@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     Label scoreText;
 
+    public GameObject explosionEffect;
+
     public float maxSpeed = 5f;
     public GameObject boost;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -64,6 +66,7 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
+        Instantiate(explosionEffect,transform.position, transform.rotation);
     }
 }
 
