@@ -74,6 +74,7 @@ public class PlayerController : MonoBehaviour
         restartButton.style.display = DisplayStyle.Flex;
     }
 
+
     void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

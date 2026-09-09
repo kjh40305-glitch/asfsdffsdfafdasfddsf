@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9ea6b274120633440a9af53acb9ffee3
+guid: 21489ad1d7cd9c94ebf6c0a7c6d922aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6695950386315148514
-    second: BG_0
+      213: 5873095519613523341
+    second: RedBlock_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_0
+      name: RedBlock_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 2305
-        height: 1168
+        y: 2
+        width: 1012
+        height: 805
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e13cb0ea9943313a0800000000000000
-      internalID: -6695950386315148514
+      spriteID: d859082124d618150800000000000000
+      internalID: 5873095519613523341
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BG_0: -6695950386315148514
+      RedBlock_0: 5873095519613523341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,8 +6,11 @@ public class Obstacle : MonoBehaviour
     public float maxSize;
     public float minSpeed;
     public float maxSpeed;
+    public float RealmaxSpeed;
+
     public float maxSpinspeed;
     public GameObject bounceEffectPrefab;
+    public GameObject ExplosionEffectPrefab;
     Rigidbody2D rb;
     void Start()
     {
@@ -16,7 +19,7 @@ public class Obstacle : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         
-        float randomSpeed = Random.Range(minSpeed,maxSpeed)/(randomSize*5);
+        float randomSpeed = Random.Range(minSpeed,maxSpeed)/randomSize;
         Vector2 randomDirection = Random.insideUnitCircle;
         rb.AddForce(randomDirection * randomSpeed);
 
@@ -27,14 +30,30 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Vector3 currentVelocity = rb.linearVelocity;
+        if(currentVelocity.magnitude > RealmaxSpeed)
+        {
+            currentVelocity = currentVelocity.normalized * RealmaxSpeed;
+            rb.linearVelocity = currentVelocity;
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Vector2 contactPoint = collision.GetContact(0).point;
-        GameObject bounceEffect = Instantiate(bounceEffectPrefab, contactPoint, Quaternion.identity);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            GameObject ExplosionEffect = Instantiate(ExplosionEffectPrefab, contactPoint, Quaternion.identity);
 
-        Destroy(bounceEffect, 1f);
+            Destroy(ExplosionEffect, 1f);
+            Destroy(gameObject);
+        }
+        else
+        {
+            GameObject bounceEffect = Instantiate(bounceEffectPrefab, contactPoint, Quaternion.identity);
+
+            Destroy(bounceEffect, 1f);
+        }
     }
 }
