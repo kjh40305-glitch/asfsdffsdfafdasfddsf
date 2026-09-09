@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public float minSize = 0.08f;
-    float maxSize = 0.2f;
-    float minSpeed = 60f;
-    float maxSpeed = 110f;
-    public float maxSpinspeed = 10f;
+    public float minSize;
+    public float maxSize;
+    public float minSpeed;
+    public float maxSpeed;
+    public float maxSpinspeed;
     public GameObject bounceEffectPrefab;
     Rigidbody2D rb;
     void Start()
@@ -15,8 +15,8 @@ public class Obstacle : MonoBehaviour
         transform.localScale  = new Vector3(randomSize, randomSize, 1);
 
         rb = GetComponent<Rigidbody2D>();
-
-        float randomSpeed = Random.Range(minSpeed,maxSpeed)/randomSize;
+        
+        float randomSpeed = Random.Range(minSpeed,maxSpeed)/(randomSize*5);
         Vector2 randomDirection = Random.insideUnitCircle;
         rb.AddForce(randomDirection * randomSpeed);
 

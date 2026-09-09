@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     public float maxSpeed = 5f;
     public GameObject boost;
+    public GameObject border;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,8 +35,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Mouse.current.leftButton.isPressed)
-        {
+        
             elapsedTime += Time.deltaTime;
             score = Mathf.FloorToInt(elapsedTime * scoreMultiplier);
 
@@ -55,7 +55,6 @@ public class PlayerController : MonoBehaviour
                     rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
                 }
             }
-        }
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
@@ -71,6 +70,7 @@ public class PlayerController : MonoBehaviour
     {
         Destroy(gameObject);
         Instantiate(explosionEffect,transform.position, transform.rotation);
+        border.SetActive(false);
         restartButton.style.display = DisplayStyle.Flex;
     }
 

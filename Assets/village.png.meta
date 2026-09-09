@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: e1a238cc79814aa47a1b195ea8f57954
+guid: 81cc4565ba621584d8945bd2c1ba34e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8762954749353914269
-    second: Shinchan_0
-  - first:
-      213: 2203838494736713849
-    second: Shinchan_1
-  - first:
-      213: 362236636100741703
-    second: Shinchan_2
-  - first:
-      213: 7395571136049059842
-    second: Shinchan_3
-  - first:
-      213: 5628466774239473795
-    second: Shinchan_4
-  - first:
-      213: -4550825867307901459
-    second: Shinchan_5
+      213: -696198635165355469
+    second: village_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shinchan_0
+      name: village_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 761
-        width: 575
-        height: 751
+        y: 0
+        width: 872
+        height: 474
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,118 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9fef0a9ae44c9970800000000000000
-      internalID: 8762954749353914269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shinchan_1
-      rect:
-        serializedVersion: 2
-        x: 575
-        y: 761
-        width: 575
-        height: 751
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9780d1d3f6b959e10800000000000000
-      internalID: 2203838494736713849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shinchan_2
-      rect:
-        serializedVersion: 2
-        x: 1150
-        y: 761
-        width: 575
-        height: 751
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 74aca632d4ce60500800000000000000
-      internalID: 362236636100741703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shinchan_3
-      rect:
-        serializedVersion: 2
-        x: 1725
-        y: 761
-        width: 575
-        height: 751
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 208165bc3c852a660800000000000000
-      internalID: 7395571136049059842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shinchan_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 10
-        width: 575
-        height: 751
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 380f1a4d5b45c1e40800000000000000
-      internalID: 5628466774239473795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shinchan_5
-      rect:
-        serializedVersion: 2
-        x: 575
-        y: 10
-        width: 575
-        height: 751
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ded14782cf738d0c0800000000000000
-      internalID: -4550825867307901459
+      spriteID: 3327bd9a70b9656f0800000000000000
+      internalID: -696198635165355469
       vertices: []
       indices: 
       edges: []
@@ -276,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 507685a88d3ed504592d3fb7401c60b3
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Shinchan_0: 8762954749353914269
-      Shinchan_1: 2203838494736713849
-      Shinchan_2: 362236636100741703
-      Shinchan_3: 7395571136049059842
-      Shinchan_4: 5628466774239473795
-      Shinchan_5: -4550825867307901459
+      village_0: -696198635165355469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
