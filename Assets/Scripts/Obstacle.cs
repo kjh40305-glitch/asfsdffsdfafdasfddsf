@@ -19,7 +19,7 @@ public class Obstacle : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         
-        float randomSpeed = Random.Range(minSpeed,maxSpeed)/randomSize;
+        float randomSpeed = Random.Range(minSpeed,maxSpeed) /randomSize;
         Vector2 randomDirection = Random.insideUnitCircle;
         rb.AddForce(randomDirection * randomSpeed);
 

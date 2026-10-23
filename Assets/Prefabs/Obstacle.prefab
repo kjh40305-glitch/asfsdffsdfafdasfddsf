@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5151819935800056179}
   - component: {fileID: -3975793204528908567}
   - component: {fileID: 4306843115889594389}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,11 +237,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e153f1307b2814eb1b3300aa38eef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSize: 0.5
-  maxSize: 1
-  minSpeed: 3
-  maxSpeed: 5
-  RealmaxSpeed: 18
+  minSize: 0.8
+  maxSize: 1.2
+  minSpeed: 1
+  maxSpeed: 2
+  RealmaxSpeed: 10
   maxSpinspeed: 10
   bounceEffectPrefab: {fileID: 5094547048498986891, guid: 12914bdb608db2345ac22103772ce521, type: 3}
   ExplosionEffectPrefab: {fileID: 2159049843890891433, guid: e9ec1d67c1fa7b0468bfe7531fbe8b09, type: 3}
